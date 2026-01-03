@@ -1,17 +1,115 @@
-*{box-sizing:border-box;margin:0;padding:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
-body{background:#04030f;color:#e6f7ff;line-height:1.6}
-nav{display:flex;align-items:center;justify-content:space-between;padding:18px 32px;background:linear-gradient(90deg,#05031a,#05030f);border-bottom:1px solid rgba(255,255,255,.04)}
-nav h1{font-size:20px;letter-spacing:2px}
-nav .menu a{color:#cfeefd;text-decoration:none;margin-left:18px;font-weight:600}
-.hero{padding:80px 20px 60px;text-align:center;background:radial-gradient(circle at 20% 20%,rgba(0,215,255,0.08),transparent),linear-gradient(180deg,#060417,#05030f)}
-.hero h2{font-size:48px;letter-spacing:4px;margin-bottom:6px}
-.subtitle{opacity:.9;font-size:18px}
-section{max-width:980px;margin:36px auto;padding:0 18px}
-.about p{margin-top:12px;color:#dff6ff}
-.music .button{display:inline-block;background:linear-gradient(135deg,#00f7ff,#ff00b8);color:#04030f;padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:700;margin:12px 0;box-shadow:0 10px 25px rgba(0,0,0,.35)}
-.images{display:flex;gap:12px;margin-top:12px}
-.images img{width:48%;border-radius:12px;object-fit:cover}
-.contact .links{display:flex;gap:12px;margin-top:12px}
-.note{margin-top:12px;opacity:.85}
-footer{padding:28px 10px;text-align:center;opacity:.8;border-top:1px solid rgba(255,255,255,.03);margin-top:36px}
-@media(max-width:640px){.images{flex-direction:column}.images img{width:100%}}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #040b0c;
+  color: #eaffff;
+  text-align: center;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 25px;
+  background: #02191c;
+  border-bottom: 1px solid #0af0ff55;
+}
+
+nav h1 {
+  color: #7afcff;
+  letter-spacing: 2px;
+}
+
+.menu a {
+  margin-left: 18px;
+  color: #9afcff;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 10px;
+  background: linear-gradient(45deg,#00ffd5,#00aaff,#00ffc8,#00c8ff);
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+.subtitle {
+  font-weight: bold;
+}
+
+.glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #ffffff33;
+  border-radius: 50%;
+  top: -150px;
+  left: -100px;
+  filter: blur(80px);
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 12px;
+}
+
+h3 {
+  color: #8ffeff;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: linear-gradient(45deg,#00f7ff,#00ffa6);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* MUSIC PLAYER */
+iframe {
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+/* GALLERY */
+.gallery .images {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.gallery img {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px #00ffee77;
+}
+
+/* CONTACT */
+.note {
+  margin-top: 10px;
+  color: #c8ffff;
+}
+
+/* FOOTER */
+footer {
+  padding: 25px;
+  color: #93ffffaa;
+}
