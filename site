@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #040b0c;
+  color: #eaffff;
+  text-align: center;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 25px;
+  background: #02191c;
+  border-bottom: 1px solid #0af0ff55;
+}
+
+nav h1 {
+  color: #7afcff;
+  letter-spacing: 2px;
+}
+
+.menu a {
+  margin-left: 18px;
+  color: #9afcff;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 10px;
+  background: linear-gradient(45deg,#00ffd5,#00aaff,#00ffc8,#00c8ff);
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+.subtitle {
+  font-weight: bold;
+}
+
+.glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #ffffff33;
+  border-radius: 50%;
+  top: -150px;
+  left: -100px;
+  filter: blur(80px);
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 12px;
+}
+
+h3 {
+  color: #8ffeff;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: linear-gradient(45deg,#00f7ff,#00ffa6);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* MUSIC PLAYER */
+iframe {
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+/* GALLERY */
+.gallery .images {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.gallery img {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px #00ffee77;
+}
+
+/* CONTACT */
+.note {
+  margin-top: 10px;
+  color: #c8ffff;
+}
+
+/* FOOTER */
+footer {
+  padding: 25px;
+  color: #93ffffaa;
+}
